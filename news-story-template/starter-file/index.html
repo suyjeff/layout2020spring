@@ -1,24 +1,31 @@
 <!DOCTYPE html>
+<!--Add media query so that text dynamically changes based off of screen size-->
 <html>
   <head>
     <title>News Story Template</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>[v-cloak] { display: none; }</style>
   </head>
   <body>
     <div id="news-template" v-cloak>
       
-      <!-- Main Story -->
-      {{ story.title }}
-      {{ story.subtitle }}
-      {{ story.date }}
-      <span v-for="tag in story.tags">{{ tag }}</span>
+      <!-- Main Story-->
+      <h1>{{ story.title }}</h1>
+      <h2>{{ story.subtitle }}</h2>
+      <span id="date"> {{ story.date }} </span>
+      <span id="tag" v-for="tag in story.tags">{{ tag }}</span>
       <img v-bind:src="story.image.url">
-      {{ story.image.caption }}
-      <a v-bind:href="story.source.url">{{ story.source.name }}</a>
+      <span id="caption">{{ story.image.caption }}</span>
+      <br>
+      <br>
+      <a id="articlesource" v-bind:href="story.source.url">{{ story.source.name }}</a>
       <span v-html="story.teaser"></span>
-      <span v-html="story.content"></span>
+      
 
-      <!-- Related Stories-->
+      <span v-html="story.content"></span>
+     
+      <!-- Related Stories COMMEND END HERE
       <ul>
         <li v-for="relatedStory in relatedStories">
           <div v-on:click="load(relatedStory)">
@@ -27,11 +34,13 @@
           </div>
         </li>
       </ul>
+    -->
 
-      <!-- Useful debugging info, you can comment this section out when you don't need it. -->
-      <pre>The story object: {{ story | json }}</pre>
-      <pre>The relatedStories array: {{ relatedStories | json }}</pre>
 
+      <!-- Useful debugging info, you can comment this section out when you don't need it. COMMENT END HERE-->
+      <!-- <pre>The story object: {{ story | json }}</pre> -->
+      <!-- <pre>The relatedStories array: {{ relatedStories | json }}</pre> -->
+    
     </div>
 
     <!-- Scripts here are what load the Vue library, and the actual story content. -->
