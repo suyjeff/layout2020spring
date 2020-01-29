@@ -1,0 +1,16 @@
+{
+  "entrypoints": [
+    {
+      "name": "Normal",
+      "file": "index.html"
+    },
+    {
+      "name": "Big Image",
+      "file": "bigimage.html"
+    },
+    {
+      "name": "Two Column",
+      "file": "twocolumn.html"
+    }
+  ]
+}
