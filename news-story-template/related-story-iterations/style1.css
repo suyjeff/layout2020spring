@@ -1,0 +1,139 @@
+@media (min-width: 1234px) {
+
+    body {
+        margin-top: 80px;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #news-template {
+        width: 80%;
+        margin: auto;
+    }
+
+    .safe-area {
+        display: block;
+    }
+
+    .relatedStoryHeader {
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 10px;
+        color: #4e4e4e;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        border-color: rgb(226, 226, 226);
+    }
+
+    .related-story-title {
+        font-family: 'Merriweather', serif;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        width: 500px;
+        height: 300px;
+        margin: 5px;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    #related-story-container {
+        display: flex;
+        padding: 0;
+        /* flex-wrap: wrap; */
+        flex-flow: row wrap;
+        margin: 20px -20px;
+    }
+
+    .related-story-box {
+        width: 20%;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        flex: 1 1 auto;
+        margin: 20px 20px 20px 20px;
+    }
+
+    .related-story-image {
+        
+        padding-bottom: 60%;
+        position: relative;
+    }
+
+    .story-thumbnail {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 1233px) {
+
+    #news-template {
+        width: 95%;
+        margin: auto;   
+    }
+
+    img {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .relatedStoryHeader {
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 25px;
+    }
+
+    .related-story-title {
+        font-family: 'Merriweather', serif;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #relatedStoriesContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+ 
+
+    .relatedStoryImage {
+        height: 170px;
+        width: 300px;
+    }
+
+}
+
+
+
+
+
+
+

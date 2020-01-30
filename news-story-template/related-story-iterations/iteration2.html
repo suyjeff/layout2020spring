@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Iteration 2</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Miriam+Libre:700|Libre+Franklin:400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>[v-cloak] { display: none; }</style>
+  </head>
+
+
+  <body>
+
+    <div id="news-template" v-cloak>
+      
+
+        <div class="wrapper">
+
+          <ul id="related-story-container">
+            <li class="related-story-box" v-for="relatedStory in relatedStories">
+              <div v-on:click="load(relatedStory)">
+                <h5 class="relatedStoryTag">World News</h5>
+                <h4 class="relatedStoryTitle">{{ relatedStory.title }}</h4>
+                <!-- <img class="relatedStoryImage" v-bind:src="relatedStory.image.url"> -->
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      
+    
+    </div>
+
+    <!-- Scripts here are what load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+  
+  </body>
+</html>
