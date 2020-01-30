@@ -1,0 +1,16 @@
+{
+  "entrypoints": [
+    {
+      "name": "Normal",
+      "file": "iteration1.html"
+    },
+    {
+      "name": "NoImage",
+      "file": "iteration2.html"
+    },
+    {
+      "name": "Sidebar",
+      "file": "iteration3.html"
+    }
+  ]
+}
