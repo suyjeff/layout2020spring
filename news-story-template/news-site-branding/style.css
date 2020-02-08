@@ -1,0 +1,14 @@
+body {
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    font-family: 'Inconsolata', monospace;
+}
+
+#sketch {
+    width: 700px;
+}
+
+#scrolled-example {
+    border: 1px solid black;
+}
