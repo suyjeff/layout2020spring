@@ -361,13 +361,18 @@
 
     #nav_bar {
         overflow: hidden;
-        /* position: absolute; */
-        position: relative;
-        /* width: 90%; */
+        position: absolute;
+        /* position: relative; */
+        width: 90%;
         background-color: white;
         margin-bottom: 20px;
         padding-bottom: 10px;
         padding-top: 10px;
+        box-shadow: 
+    }
+
+    #news-page {
+        padding-top: 70px;
     }
 
     #logo {
@@ -387,6 +392,9 @@
 
     #nav_show {
         display: none;
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
     }
 
     #nav_links h5 {
@@ -434,3 +442,4 @@
 
 
 }
+
