@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Header and Story Together</title>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,500,600,700,900|Lora:400,700|Heebo:900|Inconsolata|IBM+Plex+Sans:400,600,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>[v-cloak] { display: none; }</style>
+    </head>
+
+    <body>
+
+        <nav>
+
+            <div id="navigation-bar">
+
+                <div id="logo-section">
+                    <a id="logo" href="#">AboveTheFold</a>
+
+                    <div class="menu-button" id="hamburger" href="javascript:void(0);" onclick="showFunction()">
+                        <img  src="menu.svg" alt="Menu Button">
+                    </div>
+
+                </div>
+
+                <div id="navigation-links">
+
+                    <div class="nav-link-item">
+                        <a href="#">World</a>
+                        <div class="nav-item-dropdown">
+                            <a href="#">Coronavirus</a>
+                            <a href="#">Wars</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-link-item">
+                        <a href="#">U.S.</a>
+                    </div>
+
+                    <div class="nav-link-item">
+                        <a href="#">Politics</a>
+                    </div>
+
+                    <div class="nav-link-item">
+                        <a href="#">Election</a>
+                        <div class="nav-item-dropdown">
+                            <a href="#">Democrat Primary</a>
+                            <a href="#">Republican Primary</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-link-item">
+                        <a href="#">Business</a>
+                        <div class="nav-item-dropdown">
+                            <a href="#">Market Trends</a>
+                            <a href="#">Mad Money</a>
+                        </div>
+                    </div>
+
+                    <div id="sign-in-link">
+                        <a href="#">Sign In</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div id="news-template" v-cloak>
+            
+            <!-- Main Story-->
+            <div id="left"> 
+      
+              <div id="date-box"><span id="date"> {{ story.date }} </span></div>
+              <h1>{{ story.title }}</h1>
+              <h2 class="subtitle">{{ story.subtitle }}</h2>
+              <p id="article-details">By John Smith · <a class="articlesource" v-bind:href="story.source.url">{{ story.source.name }}</a></p>
+      
+              
+      
+              <img v-bind:src="story.image.url">
+              <span id="caption">{{ story.image.caption }}</span>
+              
+              <hr>
+      
+              <span class="teaser" v-html="story.teaser"></span>
+              <span class="articleContent" v-html="story.content"></span>
+              <p id="tag-box"><span id="tagList">TAGS</span><span id="tag" v-for="tag in story.tags">{{ tag }}</span></p>
+      
+              <ul id="social-media-links">
+                <li><img id="fb" class="social-media-svg" src="facebook.svg"></li>
+                <li><img id="tw" class="social-media-svg" src="twitter.svg"></li>
+                <li><img id="ln" class="social-media-svg" src="linkedin.svg"></li>
+              </ul>
+      
+            </div>
+      
+      
+            <div id="right">
+      
+              <!-- Related Stories-->
+              <div class="related-stories">
+                <br>
+                <h3 class="relatedStoryHeader">Recommended</h3>
+                <hr>
+              
+                <ul id="relatedStoryContainer">
+                  <!--            <li class="relatedStoryBox" v-for="relatedStory in relatedStories">-->
+                  <li class="relatedStoryBox" v-for="relatedStory in topStories(4)">
+                    <div v-on:click="load(relatedStory)">
+                      <h4 class="relatedStoryTitle">{{ relatedStory.title }}</h4>
+                      <!-- <img class="relatedStoryImage" v-bind:src="relatedStory.image.url"> -->
+                    </div>
+                  </li>
+                </ul>
+      
+              </div>
+      
+            </div>
+          
+          </div>
+      
+          <!-- Scripts here are what load the Vue library, and the actual story content. -->
+          <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+          <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+        
+        <script>
+
+            function showFunction() {
+                var x = document.getElementById("navigation-links");
+                if (x.style.display === "flex") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "flex";
+                }
+            }
+          
+          </script>
+
+    </body>
+   
+
+</html>
