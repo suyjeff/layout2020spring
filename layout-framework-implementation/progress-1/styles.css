@@ -1,0 +1,79 @@
+body {
+    
+}
+
+.wustl-red {
+    background-color: #a51517;
+}
+
+#nav-logo {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background-color: #a51517;
+    border: none;
+    font-size: 20px;
+    color: #fc8181;
+}
+
+.list-group-item a {
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background-color: #a51517;
+    border: none;
+    font-size: 20px;
+    color: #fc8181;
+}
+
+.list-group-item.active a {
+    color: white;
+    background-color: #a51517;
+}
+
+.list-group-item.active {
+    color: white;
+    background-color: #a51517;
+}
+
+.list-group-item:hover {
+    cursor: pointer;
+    color: #fed7d7;
+}
+
+.page-title {
+    font-size: 24px;
+}
+
+.nav-link.page-subtitle {
+    color: #718096;
+    font-weight: 400;
+    padding-top: 0;
+    
+}
+
+.nav-link.page-username {
+    color: black;
+    font-weight: 400;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+.dashboard-item {
+    border: 1px solid #cbd5e0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.dashboard-small {
+    height: 320px;
+}
+
