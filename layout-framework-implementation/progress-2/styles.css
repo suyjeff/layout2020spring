@@ -1,0 +1,144 @@
+.wustl-red {
+    background-color: #a51517;
+}
+
+#nav-logo {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background-color: #a51517;
+    border: none;
+    font-size: 20px;
+    color: #fc8181;
+}
+
+.list-group-item a {
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background-color: #a51517;
+    border: none;
+    font-size: 20px;
+    color: #fc8181;
+}
+
+.list-group-item.active a {
+    color: white;
+    background-color: #a51517;
+}
+
+.list-group-item.active {
+    color: white;
+    background-color: #a51517;
+}
+
+.list-group-item:hover {
+    cursor: pointer;
+    color: #fed7d7;
+}
+
+.page-title {
+    font-size: 24px;
+}
+
+.nav-link.page-subtitle {
+    color: #718096;
+    font-weight: 400;
+    padding-top: 0;
+    
+}
+
+.nav-link.page-username {
+    color: black;
+    font-weight: 400;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+.dashboard-item {
+    border: 1px solid #cbd5e0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.dashboard-small {
+    height: 300px;
+}
+
+.dashboard-small-1 {
+    height: 200px;
+}
+
+.dashboard-small-2 {
+    height: 310px;
+}
+
+.dashboard-item-label {
+    display: flex;
+}
+
+.dashboard-item-content-1 {
+    display: flex;
+}
+
+.dashboard-item-content-2 {
+}
+
+#usercirclelarge {
+    height: 100px;
+    width: 100px;
+}
+
+#stud-info {
+    padding: 5px;
+}
+
+#stud-info p {
+    margin-bottom: 5px;
+}
+
+#major {
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#major h5 {
+    margin-bottom: 0;
+}
+
+#minor {
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#minor h5 {
+    margin-bottom: 0;
+}
+
+.nested {
+    border: 1px solid rgb(143, 143, 143);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.nested p {
+    margin-bottom: 5px;
+}
+
+.alert {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
