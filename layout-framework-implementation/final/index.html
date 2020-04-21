@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+
+    <title>WebSTAC Home</title>
+
+  </head>
+
+  <body>
+
+    <div class="row mb-3 m-auto">
+
+        <div class="col-0 col-sm-4 col-md-2 wustl-red px-md-5 vh-100" id="mobile-nav">
+          <div class="p-4">
+
+            <img id="menu-button" src="MDMenu.png" alt="Hamburger" onclick="closeMenu()">
+
+            <img id="nav-logo" src="washulogo-shield.png" alt="Logo">
+
+            <ul class="list-group">
+              <li class="list-group-item active"><a href="index.html">Home</a></li>
+              <li class="list-group-item"><a href="academics.html">Academics</a></li>
+              <li class="list-group-item"><a href="courses.html">Courses</a></li>
+              <li class="list-group-item"><a href="finances.html">Finances</a></li>
+              <li class="list-group-item">Housing</li>
+              <li class="list-group-item">Your Info</li>
+            </ul>
+            
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-8 col-md-10 vh-100">
+
+          <div class="p-4 vh-100">
+
+            <img id="menu-button-homepage" src="MDMenublack.png" alt="Hamburger" onclick="closeMenu()">
+
+            <ul class="nav d-flex align-items-center">
+              <div>
+                <li class="nav-item page-title">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link page-subtitle" href="#">Welcome back, Jeff</a>
+                </li>
+              </div>
+
+              <li class="nav-item ml-auto">
+                <img src="usercircle.png" alt="User Picture">
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link page-username" href="#">Sara Smith</a>
+              </li>
+            </ul>
+
+            <div class="row mb-3 p-3">
+
+              <div class="col-md-4 zero-m">
+
+                <div class="dashboard-item dashboard-small-1 p-4">
+
+                  <div class="dashboard-item-label">
+                    <h5>Student Information</h5>
+                    <p class="ml-auto text-primary">Modify</p>
+                  </div>
+                  
+                  <div class="dashboard-item-content-1">
+                    <img src="usercirclelarge.png" alt="User Picture" id="usercirclelarge">
+                    <div class="ml-auto" id="stud-info">
+                      <p class="text-muted">Sara Smith (Sara)</p>
+                      <p class="text-muted">ID 101392</p>
+                      <p class="text-muted">sarasmith@wustl.edu</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="dashboard-item dashboard-small p-4">
+
+                  <div class="dashboard-item-label">
+                    <h5>Academic Summary</h5>
+                    <p class="ml-auto text-primary">Modify</p>
+                  </div>
+
+                  <div class="dashboard-item-content-2">
+
+                    <div class="p-3 bg-primary" id="major">
+                      <h5>B.S. in Computer Science</h5>
+                    </div>
+
+                    <div class="p-3 bg-info" id="minor">
+                      <h5>Minor in HCI</h5>
+                    </div>
+
+                    <div class="dashboard-item-content-1">
+                      <p><strong>Expected Graduation</strong></p>
+                      <p class="ml-auto text-secondary">SU2022</p>
+                    </div>
+
+                    <div class="dashboard-item-content-1">
+                      <p><strong>Advisor</strong></p>
+                      <p class="ml-auto text-danger">Kris Campa</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-8">
+
+                <div class="dashboard-item dashboard-small-2 p-4">
+
+                  <div class="dashboard-item-label">
+                    <h5>School News</h5>
+                    <p class="ml-auto text-primary">View More</p>
+                  </div>
+
+                  <div class="dashboard-item-content-2 p-3 nested">                   
+                    <div class="dashboard-item-label">
+                      <h6>Current Address Information</h6>
+                      <p class="ml-auto text-secondary">Read More</p>
+                    </div>
+                    <p>All students are being asked at this time to provide the local address where they are currently residing.</p>
+                  </div>
+
+                  <div class="dashboard-item-content-2 p-3 nested">
+                    <div class="dashboard-item-label">
+                      <h6>COVID-19 Updates</h6>
+                      <p class="ml-auto text-secondary">Read More</p>
+                    </div>
+                    <p>Check our COVID-19 page to stay up to date on the updates surrounding WashU and the virus.</p>
+                  </div>
+
+                </div>
+
+                <div class="dashboard-item dashboard-small p-4">
+
+                  <div class="dashboard-item-label">
+                    <h5>Course Summary</h5>
+                    <p class="ml-auto text-secondary">SP2020</p>
+                  </div>
+
+                  <div class="table-responsive-sm">
+                    <table class="table">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Course</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Drop Deadline</th>
+                          <th scope="col">Option</th>
+                          <th scope="col">Grade</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>ESE 326</td>
+                          <td>Probability and Statistics</td>
+                          <td>1/23</td>
+                          <td>C</td>
+                          <td>95% A</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>CSE 204</td>
+                          <td>Web Development</td>
+                          <td>1/23</td>
+                          <td>C</td>
+                          <td>93% A</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>CSE 217</td>
+                          <td>Data Science</td>
+                          <td>1/23</td>
+                          <td>P/F</td>
+                          <td>97% A</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            
+
+          </div>
+
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+
+      function closeMenu() {
+        var x = document.getElementById("mobile-nav")
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+      }
+    
+    </script>
+
+
+  </body>
+
+</html>

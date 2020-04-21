@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+
+    <title>WebSTAC Courses</title>
+
+  </head>
+
+  <body>
+
+    <div class="row mb-3">
+
+        <div class="col-sm-4 col-md-2 wustl-red px-md-5 vh-100" id="mobile-nav">
+          <div class="p-4">
+
+            <img id="menu-button" src="MDMenu.png" alt="Hamburger" onclick="closeMenu()">
+
+            <img id="nav-logo" src="washulogo-shield.png" alt="Logo">
+
+            <ul class="list-group">
+              <li class="list-group-item"><a href="index.html">Home</a></li>
+              <li class="list-group-item"><a href="academics.html">Academics</a></li>
+              <li class="list-group-item active"><a href="courses.html">Courses</a></li>
+              <li class="list-group-item"><a href="finances.html">Finances</a></li>
+              <li class="list-group-item">Housing</li>
+              <li class="list-group-item">Your Info</li>
+            </ul>
+            
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-8 col-md-10 vh-100">
+
+          <div class="p-4 vh-100">
+
+            <img id="menu-button-homepage" src="MDMenublack.png" alt="Hamburger" onclick="closeMenu()">
+
+            <ul class="nav d-flex align-items-center">
+              <div>
+                <li class="nav-item page-title">
+                  <a class="nav-link" href="#">Courses</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link page-subtitle" href="#">Classes for SP2020</a>
+                </li>
+              </div>
+
+              <li class="nav-item ml-auto">
+                <img src="usercircle.png" alt="User Picture">
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link page-username" href="#">Jeff Su</a>
+              </li>
+            </ul>
+
+            <div class="row mb-3 p-3">
+
+                <div class="col-md-12">
+  
+                    <div class="dashboard-item dashboard-small-1 p-4" style="height: 420px; overflow-y: scroll;">
+
+                        <div class="dashboard-item-label mb-3">
+                            <h5>Class Schedule</h5>
+                            <div class="dropdown ml-auto">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Semester
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">SP2020</a>
+                                    <a class="dropdown-item" href="#">FL2019</a>
+                                    <a class="dropdown-item" href="#">SP2019</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                <th scope="col">Course ID</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Units</th>
+                                <th scope="col">Option</th>
+                                <th scope="col">Day</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Building</th>
+                                <th scope="col">Instructor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>E60 Engr 310</td>
+                                    <td>Technical Writing</td>
+                                    <td>3.0</td>
+                                    <td>C</td>
+                                    <td>T-R</td>
+                                    <td>2:30 PM-3:50 PM</td>
+                                    <td>Crow</td>
+                                    <td>Meyer</td>
+                                </tr>
+                                <tr>
+                                    <td>E81 CSE 347</td>
+                                    <td>Analysis of Algorithms</td>
+                                    <td>3.0</td>
+                                    <td>C</td>
+                                    <td>-W-</td>
+                                    <td>2:30 PM-4:20 PM</td>
+                                    <td>Urbauer</td>
+                                    <td>Buhler</td>
+                                </tr>
+                                <tr>
+                                    <td>E81 CSE 433</td>
+                                    <td>Introduction to Computer Security</td>
+                                    <td>3.0</td>
+                                    <td>C</td>
+                                    <td>T-R</td>
+                                    <td>10:00 AM-11:20 AM</td>
+                                    <td>January</td>
+                                    <td>Cole</td>
+                                </tr>
+                                <tr>
+                                    <td>E81 CSE 437</td>
+                                    <td>Software Engineering Workshop</td>
+                                    <td>3.0</td>
+                                    <td>C</td>
+                                    <td>-T-</td>
+                                    <td>5:30 PM-8:30 PM</td>
+                                    <td>Urbauer</td>
+                                    <td>Evans</td>
+                                </tr>
+                                <tr>
+                                    <td>L31 Physics 125</td>
+                                    <td>Solar System Astronomy</td>
+                                    <td>3.0</td>
+                                    <td>C</td>
+                                    <td>T-R</td>
+                                    <td>11:30 AM-12:50 PM</td>
+                                    <td>Crow</td>
+                                    <td>Errando</td>
+                                </tr>
+
+
+                            </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-item dashboard-small-1 p-4" style="height: 270px; overflow-y: scroll;">
+
+                        <div class="dashboard-item-label mb-3">
+                            <h5>Final Schedule</h5>
+                        </div>
+
+                        <div class="table-responsive table-sm">
+                            <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                <th scope="col">Course ID</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Day</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Building</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>E81 CSE 347</td>
+                                    <td>Analysis of Algorithms</td>
+                                    <td>Dec 14</td>
+                                    <td>3:30 PM-5:30 PM</td>
+                                    <td>Urbauer</td>
+                                </tr>
+                                <tr>
+                                    <td>E81 CSE 433</td>
+                                    <td>Introduction to Computer Security</td>                                  
+                                    <td>Dec 10</td>
+                                    <td>10:30 AM-12:30 AM</td>
+                                    <td>January</td>                                  
+                                </tr>
+                                <tr>
+                                    <td>E81 CSE 437</td>
+                                    <td>Software Engineering Workshop</td>                              
+                                    <td>Dec 15</td>
+                                    <td>5:30 PM-8:30 PM</td>
+                                    <td>Urbauer</td>
+                                </tr>
+                                <tr>
+                                    <td>L31 Physics 125</td>
+                                    <td>Solar System Astronomy</td>
+                                    <td>Dec 14</td>
+                                    <td>1:00 PM-3:00 PM</td>
+                                    <td>Crow</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+          </div>
+
+        </div>
+
+    
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+
+      function closeMenu() {
+        var x = document.getElementById("mobile-nav")
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+      }
+    
+    </script>
+
+  </body>
+
+</html>
